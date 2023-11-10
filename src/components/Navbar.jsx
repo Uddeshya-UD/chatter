@@ -9,7 +9,7 @@ const Navbar = () => {
             <a href="/register">Register</a>
         </div>
     </div>
-  )
+  );
 }
 
 export default Navbar
