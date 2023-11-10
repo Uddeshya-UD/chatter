@@ -13,6 +13,7 @@ const handleInputValue = (e) => {
   return (
     <div className='messagespace'>
         <input className='textfield' type='text' value={inputValue} onChange={handleInputValue} placeholder='Message'/>
+        <input className='send' type='submit' placeholder='send'/>
     </div>
   )
 }
