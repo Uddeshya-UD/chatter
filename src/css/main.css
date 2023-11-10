@@ -1,0 +1,45 @@
+.container{
+    height: 100%;
+    width: auto;
+}
+.section-1{
+    display: flex;
+    justify-content: space-around;
+    height: 80vh;
+}
+
+.users {
+    display: block;
+    width: 30%;
+    height: 100%;
+    background-color: rgb(45, 193, 193);
+}
+
+
+.user-items {
+    display: block;
+    height: 40px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+.chatspace {
+    width: 70%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.messagespace{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(163, 121, 121);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textfield{
+    width: 80%;
+}

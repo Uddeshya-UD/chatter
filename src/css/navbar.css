@@ -1,0 +1,12 @@
+.nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: grey;
+}
+
+.links a{
+    padding: 10px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
