@@ -8,16 +8,19 @@ const Socket = () => {
   useEffect(() => {
     console.log('Connecting to the server...');
 
-    // Add event listeners or emit events as needed
-    socket.on('connect', () => {
-      console.log('Connected to the socket server');
+    // Cleanup on component unmount
+      // Add event listeners or emit events as needed
+  socket.on('connect', () => {
+    console.log('Connected to the socket server');
+  });
+
+  socket.on('message', (data) => {
+      console.log('Received message from server:', data);
     });
 
-    socket.emit('sendMessage', 'Hello, server!');
 
-    // Cleanup on component unmount
-    
   }, []);
+
 
 
 return <></>;

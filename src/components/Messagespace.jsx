@@ -18,13 +18,8 @@ const Messagespace = () => {
     e.preventDefault();
     const msg = inputValue;
     console.log(msg);
-
-    e.preventDefault()
-
-
-    // Assuming you have a "sendMessage" event on your server
-    socket.emit("sendMessage", msg);
-
+    
+    socket.emit('message',msg)
     outputMessage(msg);
     // Clear the input field after sending the message
     setInputValue("");
