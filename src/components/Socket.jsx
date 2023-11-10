@@ -19,7 +19,9 @@ const Socket = () => {
     
   }, []);
 
-  return <></>;
+
+return <></>;
+
 };
 
 export { socket };
