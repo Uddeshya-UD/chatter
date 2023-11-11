@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react";
-import "../css/main.css";
+import "../css/messagespace.css";
 import io from 'socket.io-client';
-import { socket } from "./Socket";
-import Socket from './Socket'
+import { socket , Socket } from "./Socket";
 
+Socket();
+// const chatMessages = document.querySelector('.chat-messages');
 const Messagespace = () => {
-
-  Socket();
 
   const [inputValue, setInputValue] = useState("");
 
@@ -19,22 +18,11 @@ const Messagespace = () => {
     const msg = inputValue;
     console.log(msg);
     
-    socket.emit('message',msg)
-    outputMessage(msg);
+    socket.emit('sendMessage',msg)
+   
     // Clear the input field after sending the message
     setInputValue("");
   };
-
-
-  function outputMessage(message){
-    const div = document.createElement('div')
-    div.classList.add('message');
-    div.innerHTML = ` <p className="meta"Brad><span></span>9:12pm</p>
-    <p className='text'>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt adipisci modi totam alias ex et unde! Eligendi molestias dolorem illum voluptate blanditiis facilis, dolorum, dolores deleniti nihil repellat aliquid expedita.
-    </p>`;
-    document.querySelector('.chat-messages').appendChild(div)
-  }
 
   return (
     <>

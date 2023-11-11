@@ -3,10 +3,16 @@
     justify-content: space-around;
     padding: 20px;
     background-color: grey;
+    height: 5%;
 }
 
-.links a{
-    padding: 10px;
+.nav-item{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
 }

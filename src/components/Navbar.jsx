@@ -3,10 +3,10 @@ import '../css/navbar.css'
 const Navbar = () => {
   return (
     <div className='nav'>
-        <div className="logo">Chatter</div>
-        <div className="links">
-            <a href="/login">Login</a>
-            <a href="/register">Register</a>
+        <div className="nav-item">Chatter</div>
+        <div className="nav-item">
+            <a className="nav-item" href="/login">Login</a>
+            <a className="nav-item" href="/register">Register</a>
         </div>
     </div>
   );

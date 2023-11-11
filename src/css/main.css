@@ -1,11 +1,11 @@
 .container{
-    height: 100%;
+    height: 100vh;
     width: auto;
 }
 .section-1{
     display: flex;
     justify-content: space-around;
-    height: 80vh;
+    height: 80%;
 }
 
 .panel {
@@ -33,29 +33,9 @@
 
 }
 
-.messagespace{
-    height: 50px;
-    width: 100%;
-    background-color: rgb(163, 121, 121);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
 
 .textfield{
     height: 80%;
     width: 80%;
 }
 
-.send{
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border: 1px solid #000000;
-    color: #000000;
-    border-radius: 5px;
-}

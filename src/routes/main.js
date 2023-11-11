@@ -3,6 +3,9 @@ import Navbar from "../components/Navbar";
 import Panel from "../components/Panel";
 import Chatspace from "../components/Chatspace";
 import '../css/main.css'
+import '../css/chatspace.css'
+import '../css/messagespace.css'
+
 import Messagespace from "../components/Messagespace";
 
 const Main = () => {

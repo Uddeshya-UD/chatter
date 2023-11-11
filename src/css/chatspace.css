@@ -1,0 +1,24 @@
+.chat-messages{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    background-color: pink;
+    padding: 10px;
+    overflow: auto;
+
+}
+.message{
+    border: 1px solid #000000;
+    overflow: auto;
+    padding: 10px;
+    text-align: left;
+    display: block;
+}
+
+.meta{
+    color: rgb(0, 0, 0);
+}
+
+.text {
+    color: rgb(129, 21, 21);
+}
