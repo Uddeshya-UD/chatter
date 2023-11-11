@@ -2,6 +2,7 @@ import { BrowserRouter as Router , Routes , Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import './App.css';
 import Main from './routes/main'
+import First from './routes/first'
 import io from 'socket.io-client';
 
 
@@ -32,6 +33,8 @@ function App() {
      <Router>
     <Routes>
     <Route path="/" element={<Main />} />
+    <Route path="/index" element={<First />} />
+
     </Routes>
    </Router>
     </div>

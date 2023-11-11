@@ -1,11 +1,15 @@
-import React, { useState, useEffect } from "react";
-import "../css/messagespace.css";
-import io from 'socket.io-client';
-import { socket , Socket } from "./Socket";
+import React, { useState, useEffect  } from "react";
+import { useLocation } from 'react-router-dom';
+import { socket, initializeSocket } from "../util/socket"
 
-Socket();
+import "../css/messagespace.css";
+
+
 // const chatMessages = document.querySelector('.chat-messages');
 const Messagespace = () => {
+
+  const location = useLocation();
+  const data = location.state ? location.state.data : null;
 
   const [inputValue, setInputValue] = useState("");
 
@@ -16,7 +20,7 @@ const Messagespace = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     const msg = inputValue;
-    console.log(msg);
+    console.log(msg,data);
     
     socket.emit('sendMessage',msg)
    

@@ -2,7 +2,7 @@ import React from 'react'
 import { socket } from "./Socket";
 import Socket from './Socket'
 import "../css/chatspace.css";
-const Chatspace = () => {
+const Chatspace = (passedData) => {
 
   return (
     <div className='chat-messages'>
